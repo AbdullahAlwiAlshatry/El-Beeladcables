@@ -1,0 +1,212 @@
+/* ============================================
+   Payment Cards Footer
+   ============================================ */
+
+.footer-payments {
+    margin-top: 8px;
+    padding: 20px 0 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.footer-payments-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+.footer-payments-heading strong,
+.footer-payments-heading small {
+    display: block;
+}
+
+.footer-payments-heading strong {
+    color: #d4d4d8;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.footer-payments-heading small {
+    color: #52525b;
+    font-size: 10px;
+    margin-top: 2px;
+}
+
+.footer-payments-line {
+    width: 42px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(161, 161, 170, 0.45));
+}
+
+.footer-payments-line:last-child {
+    background: linear-gradient(90deg, rgba(161, 161, 170, 0.45), transparent);
+}
+
+.payment-cards {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 8px;
+    direction: ltr;
+}
+
+.payment-card {
+    min-height: 54px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    padding: 7px 5px;
+    border: 1px solid rgba(212, 212, 216, 0.2);
+    border-radius: 7px;
+    color: #d4d4d8;
+    text-align: center;
+    background: rgba(161, 161, 170, 0.16);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+}
+
+.payment-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.12), transparent 42%);
+    pointer-events: none;
+}
+
+.payment-card:hover {
+    transform: translateY(-3px);
+    background: rgba(212, 212, 216, 0.24);
+    border-color: rgba(228, 228, 231, 0.42);
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.18);
+}
+
+.payment-card-brand {
+    position: relative;
+    z-index: 1;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: -0.4px;
+    line-height: 1.05;
+    color: #d4d4d8;
+    filter: grayscale(1);
+}
+
+.payment-card-caption {
+    display: none;
+}
+
+.payment-card-paypal,
+.payment-card-mastercard,
+.payment-card-visa,
+.payment-card-amex,
+.payment-card-tabby,
+.payment-card-tamara {
+    background: rgba(161, 161, 170, 0.16);
+}
+
+.payment-card-paypal .payment-card-brand {
+    font-style: italic;
+}
+
+
+.payment-card-mastercard .payment-card-brand {
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    text-transform: lowercase;
+}
+
+.payment-card-symbol {
+    position: absolute;
+    top: 11px;
+    display: flex;
+    direction: ltr;
+}
+
+.payment-card-symbol i {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+
+.payment-card-symbol i:first-child {
+    background: #71717a;
+    margin-right: -7px;
+}
+
+.payment-card-symbol i:last-child {
+    background: #a1a1aa;
+}
+
+.payment-card-mastercard .payment-card-caption {
+    margin-top: 18px;
+}
+
+
+.payment-card-visa .payment-card-brand {
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+
+.payment-card-amex .payment-card-brand {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+
+.payment-card-tabby .payment-card-brand {
+    font-size: 16px;
+    letter-spacing: -1px;
+}
+
+
+.payment-card-tamara .payment-card-brand {
+    font-family: 'Ramis Arabic', 'Segoe UI', sans-serif;
+    font-size: 16px;
+}
+
+@media (max-width: 900px) {
+    /* .payment-cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        max-width: 620px;
+        margin: 0 auto;
+    } */
+}
+
+@media (max-width: 480px) {
+    /* .footer-content {
+        padding-left: 14px;
+        padding-right: 14px;
+    } */
+
+    .footer-payments-heading {
+        gap: 10px;
+    }
+
+    .footer-payments-line {
+        width: 28px;
+    }
+
+    /* .payment-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    } */
+
+    .payment-card {
+        min-height: 48px;
+        border-radius: 6px;
+    }
+
+    .payment-card-brand {
+        font-size: 13px;
+    }
+}
