@@ -1,0 +1,11 @@
+[providers.php]
+# إجبار المنصة على تثبيت حزم Composer وتوجيه السيرفر إلى مجلد public
+root = "public"
+
+[phases.build]
+# الأوامر التي يجب تنفيذها أثناء البناء داخل السيرفر
+cmds = [
+    "composer install --no-dev --optimize-autoloader --no-interaction",
+    "mkdir -p storage/framework/{cache,sessions,views} bootstrap/cache",
+    "chmod -R 775 storage bootstrap/cache"
+]
