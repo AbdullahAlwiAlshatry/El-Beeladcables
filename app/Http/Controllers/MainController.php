@@ -26,8 +26,8 @@ class MainController extends Controller
             'message' => ['required', 'string', 'max:5000'],
         ]);
 
-        $token = "8343322537:AAEzq7Z7YXVLd_zwJfxOj8gKIUqEv0C6xyE";
-        $chatId = "8638644642";
+        $token = "env(TeleToken)";
+        $chatId = "env(chatID)";
 
         $allMessage =
             "📩 رسالة جديدة من العميل\n\n" .
@@ -55,79 +55,6 @@ class MainController extends Controller
             'message' => 'تم إرسال الرسالة بنجاح'
         ]);
     }
-
-
-
-
-
-
-
-    // public function order(Request $request)
-    // {
-    //     // قراءة البيانات من حقول الـ FormData بالتوافق التام
-    //     $customerName = $request->input('customerName') ?? 'عميل غير معروف';
-    //     $customerPhone = $request->input('customerPhone') ?? 'بدون هاتف';
-    //     $customerAddress = $request->input('customerAddress') ?? 'بدون عنوان';
-    //     $customerShop = $request->input('customerShop') ?? '';
-    //     $orderNo = $request->input('orderNo') ?? '0000';
-    //     $date = $request->input('date') ?? date('Y-m-d');
-    //     $totalItems = $request->input('totalItems') ?? 0;
-    //     $pdfHtml = $request->input('pdfHtml') ?? '';
-
-    //     // ضع قيم البوت والـ Chat ID الخاصة بك يدوياً هنا لتخطي كاش الـ env
-    //     $token = env('TELEGRAM_BOT_TOKEN');
-    //     $chatId = env('TELEGRAM_CHAT_ID');
-
-
-    //     try {
-    //         // تهذيب وتطهير الـ CSS ليتوافق مع محرك DomPDF القديم ويمنع خطأ 500
-    //         $pdfHtml = str_replace('display:flex;justify-content:space-between;', 'display:block;clear:both;', $pdfHtml);
-    //         $pdfHtml = str_replace('flex-direction:column;', 'display:block;', $pdfHtml);
-    //         $pdfHtml = str_replace('<div class="cust-row">', '<div class="cust-row" style="margin-bottom:8px;border-bottom:1px dashed #eee;padding-bottom:4px;">', $pdfHtml);
-
-    //         // صياغة الـ HTML مع ترويسة UTF-8 الصارمة
-    //         $finalHtml = '<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>' . $pdfHtml;
-
-    //         // 💡 1. بناء عنصر الـ PDF الأساسي
-    //         $pdf = Pdf::loadHTML($finalHtml);
-
-    //         // 💡 2. الحل البرمجي الجذري: تشغيل وتفعيل خيارات معالجة التشكيل والخطوط العربية في السيرفر
-    //         $pdf->getDomPDF()->set_option("isRemoteEnabled", true);     // السماح بتحميل الخطوط الخارجية والـ CSS
-    //         $pdf->getDomPDF()->set_option("isFontSubsettingEnabled", true); // تفعيل دمج بايتات الخطوط للغة العربية
-
-    //         // توليد بايتات الـ PDF في الذاكرة الحية فوراً بعد ضبط الإعدادات العربية
-    //         $pdfBinaryContent = $pdf->output();
-
-    //         $captionMessage =
-    //             "📩 طلب وفاتورة PDF جديدة من الموقع\n\n" .
-    //             "👤 العميل: " . $customerName . "\n" .
-    //             "📞 الهاتف: " . $customerPhone . "\n" .
-    //             ($customerShop ? "🏪 المحل: " . $customerShop . "\n" : "") .
-    //             "📍 العنوان: " . $customerAddress . "\n\n" .
-    //             "🔢 رقم الطلب: " . $orderNo . "\n" .
-    //             "📅 التاريخ: " . $date . "\n" .
-    //             "📦 إجمالي المنتجات: " . $totalItems . " قطع";
-
-    //         // إرسال الفايل الحقيقي المولد للـ تليجرام
-    //         $response = Http::timeout(25)
-    //             ->attach('document', $pdfBinaryContent, "Order-{$orderNo}.pdf")
-    //             ->post("https://api.telegram.org/bot{$token}/sendDocument", [
-    //                 'chat_id' => $chatId,
-    //                 'caption' => $captionMessage,
-    //                 'parse_mode' => 'HTML'
-    //             ]);
-
-    //         if (!$response->successful()) {
-    //             return response()->json(['success' => false, 'message' => 'تليجرام رفض استقبال مستند الـ PDF'], 400);
-    //         }
-
-    //         return response()->json(['success' => true, 'message' => 'تم إرسال الطلب وتوليد ملف PDF بنجاح']);
-
-    //     } catch (Exception $e) {
-    //         return response()->json(['success' => false, 'message' => 'حدث استثناء: ' . $e->getMessage()], 500);
-    //     }
-    // }
-
 
 
     public function order(Request $request)
@@ -194,8 +121,8 @@ class MainController extends Controller
         }
 
         // ضع قيم البوت والـ Chat ID الخاصة بك يدوياً هنا لتخطي كاش الـ env
-        $token = "8343322537:AAEzq7Z7YXVLd_zwJfxOj8gKIUqEv0C6xyE";
-        $chatId = "8638644642";
+        $token = "env(TeleToken)";
+        $chatId = "env(chatID)";
 
         try {
             // 2️⃣ هندسة الفاتورة: إجبار التشفير على UTF-8 لضمان قراءة اللغة العربية والإنجليزية معاً بوضوح كامل
