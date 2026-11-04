@@ -63,13 +63,13 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).<br><br><br><br>
+  
 
 
 
 
-
-# 🏭 EL-BEELAD CABLES
+# 🏭 EL-BEELAD CABLES 
 ### El-Beelad Cables Website
 
 <p align="center">
@@ -114,9 +114,7 @@ Attention has been paid to the display experience on various screens, including 
 
 | View Website on Computer | View Website on Mobile |
 
-
 | [View Image](https://github.com/AbdullahAlwiAlshatry/El-Beeladcables/blob/main/pictures%20project/Main.png) | [View Image](https://github.com/AbdullahAlwiAlshatry/El-Beeladcables/blob/main/pictures%20project/phone.png) |
-
 
 ## 🛠️ Technologies Used
 
