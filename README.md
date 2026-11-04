@@ -64,3 +64,90 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+---------------
+
+<div dir="rtl" align="right">
+
+# 🏭 EL-BEELAD CABLES
+### El-Beelad Cables Website
+
+<p align="center">
+
+<img src="https://raw.githubusercontent.com/AbdullahAlwiAlshatry/El-Beeladcables/main/pictures%20project/Main.png" alt="El-Beelad Cables Homepage" width="100%">
+</p>
+
+<p align="center">
+
+<a href="https://3lbeeldcable.infinityfreeapp.com/">
+
+🌐 Visit Website
+</a>
+
+|
+
+<a href="https://github.com/AbdullahAlwiAlshatry/El-Beeladcables">
+
+💻 GitHub Repository
+
+</a>
+</p>
+
+---
+
+## 📖 About the Project
+
+**El-Beelad Cables** is a website project dedicated to introducing the company and showcasing its digital identity through a well-organized online interface.
+
+The project aims to provide a clear browsing experience and make the site accessible from computers and mobile phones.
+
+## 📱 Mobile-Friendly Design
+
+Attention has been paid to the display experience on various screens, including mobile phones, to facilitate browsing the site using different devices.
+
+<p align="center">
+
+<img src="https://raw.githubusercontent.com/AbdullahAlwiAlshatry/El-Beeladcables/main/pictures%20project/phone.png" alt="El-Beeladcables Mobile Website" width="320">
+</p>
+
+## 🖼️ Project Image Gallery
+
+| View Website on Computer | View Website on Mobile |
+
+|:---:|:---:|
+
+| [View Image](https://github.com/AbdullahAlwiAlshatry/El-Beeladcables/blob/main/pictures%20project/Main.png) | [View Image](https://github.com/AbdullahAlwiAlshatry/El-Beeladcables/blob/main/pictures%20project/phone.png) |
+
+
+## 🛠️ Technologies Used
+
+- **Laravel 11**
+
+- **PHP 8.2**
+
+- **HTML**
+
+- **CSS**
+
+- **JavaScript**
+  
+- **MySQL** 
+
+## 🚀 Visit the Project
+
+You can visit the published version of the website via the following link:
+
+**[El-Beelad Cables - Website](https://3lbeeldcable.infinityfreeapp.com/)**
+
+## 💻 Source Code
+
+The project is available on the GitHub repository:
+
+[AbdullahAlwiAlshatry / El-Beeladcables](https://github.com/AbdullahAlwiAlshatry/El-Beeladcables)
+
+## 👨‍💻 Developer
+
+**Abdullah Alawi Alshateri**
+
+</div>
