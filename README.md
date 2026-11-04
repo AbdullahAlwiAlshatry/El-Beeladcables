@@ -115,7 +115,6 @@ Attention has been paid to the display experience on various screens, including 
 
 | View Website on Computer | View Website on Mobile |
 
-|:---:|:---:|
 
 | [View Image](https://github.com/AbdullahAlwiAlshatry/El-Beeladcables/blob/main/pictures%20project/Main.png) | [View Image](https://github.com/AbdullahAlwiAlshatry/El-Beeladcables/blob/main/pictures%20project/phone.png) |
 
